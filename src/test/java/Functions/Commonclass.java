@@ -23,7 +23,7 @@ public static ChromeDriver openbrowser() throws Exception
 
     p = new Properties();
     p.load(file);
-    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
+   // System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\chromedriver.exe");
 
     driver.get(p.getProperty("app_url"));
     driver.manage().window().maximize();
